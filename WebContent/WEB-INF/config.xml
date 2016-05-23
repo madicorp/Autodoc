@@ -1,0 +1,118 @@
+<config>
+	<enabled>true</enabled>
+	<baseDir>/WEB-INF/BACK-SPACE/</baseDir>
+	<baseURL>/WEB-INF/BACK-SPACE/</baseURL>
+	<licenseKey></licenseKey>
+	<licenseName></licenseName>
+	<imgWidth>1600</imgWidth>
+	<imgHeight>1200</imgHeight>
+	<imgQuality>80</imgQuality>
+	<uriEncoding>UTF-8</uriEncoding>
+	<defaultResourceTypes></defaultResourceTypes>
+	<types>
+		<type name="Doc">
+			<url>%BASE_URL%Doc/</url>
+			<directory>%BASE_DIR%Doc</directory>
+			<maxSize>0</maxSize>
+			<allowedExtensions>docx,docm,dotx,dotm,xlsx,xlsm,xltx,xltm,pptx,potx
+			</allowedExtensions>
+			<deniedExtensions></deniedExtensions>
+		</type>
+		<type name="Cloud">
+			<url>%BASE_URL%Cloud/</url>
+			<directory>%BASE_DIR%Cloud</directory>
+			<maxSize>0</maxSize>
+			<allowedExtensions>7z,aiff,asf,avi,bmp,csv,doc,docx,fla,flv,gif,gz,gzip,jpeg,jpg,mid,mov,mp3,mp4,mpc,mpeg,mpg,ods,odt,pdf,png,ppt,pptx,pxd,qt,ram,rar,rm,rmi,rmvb,rtf,sdc,sitd,swf,sxc,sxw,tar,tgz,tif,tiff,txt,vsd,wav,wma,wmv,xls,xlsx,zip
+			</allowedExtensions>
+			<deniedExtensions></deniedExtensions>
+		</type>
+		<type name="Gabarit">
+			<url>%BASE_URL%Gabarit/</url>
+			<directory>%BASE_DIR%Gabarit</directory>
+			<maxSize>0</maxSize>
+			<allowedExtensions>txt
+			</allowedExtensions>
+			<deniedExtensions></deniedExtensions>
+		</type>
+		<type name="TemplateDoc">
+			<url>%BASE_URL%Template/Docx/</url>
+			<directory>%BASE_DIR%Template/Docx</directory>
+			<maxSize>0</maxSize>
+			<allowedExtensions>docx,docm,dotx,dotm
+			</allowedExtensions>
+			<deniedExtensions></deniedExtensions>
+		</type>
+		<type name="TemplateXls">
+			<url>%BASE_URL%Template/Xls/</url>
+			<directory>%BASE_DIR%Template/Xls</directory>
+			<maxSize>0</maxSize>
+			<allowedExtensions>xlsx,xlsm,xltx,xltm
+			</allowedExtensions>
+			<deniedExtensions></deniedExtensions>
+		</type>
+		<type name="TemplatePpt">
+			<url>%BASE_URL%Template/Pptx/</url>
+			<directory>%BASE_DIR%Template/Pptx</directory>
+			<maxSize>0</maxSize>
+			<allowedExtensions>pptx,potx
+			</allowedExtensions>
+			<deniedExtensions></deniedExtensions>
+		</type>
+	</types>
+	<userRoleSessionVar>CKFinder_UserRole</userRoleSessionVar>
+	<accessControls>
+		<accessControl>
+			<role>*</role>
+			<resourceType>*</resourceType>
+			<folder>/</folder>
+			<folderView>true</folderView>
+			<folderCreate>true</folderCreate>
+			<folderRename>true</folderRename>
+			<folderDelete>true</folderDelete>
+			<fileView>true</fileView>
+			<fileUpload>true</fileUpload>
+			<fileRename>true</fileRename>
+			<fileDelete>true</fileDelete>
+		</accessControl>
+	</accessControls>
+	<thumbs>
+		<enabled>true</enabled>
+		<url>%BASE_URL%_thumbs/</url>
+		<directory>%BASE_DIR%_thumbs</directory>
+		<directAccess>false</directAccess>
+		<maxHeight>100</maxHeight>
+		<maxWidth>100</maxWidth>
+		<quality>80</quality>
+	</thumbs>
+	<disallowUnsafeCharacters>false</disallowUnsafeCharacters>
+	<checkDoubleExtension>true</checkDoubleExtension>
+	<checkSizeAfterScaling>true</checkSizeAfterScaling>
+	<secureImageUploads>true</secureImageUploads>
+	<htmlExtensions>html,htm,xml,js</htmlExtensions>
+	<forceASCII>false</forceASCII>
+	<hideFolders>
+		<folder>.*</folder>
+		<folder>CVS</folder>
+	</hideFolders>
+	<hideFiles>
+		<file>.*</file>
+	</hideFiles>
+	<plugins>
+		<plugin>
+			<name>imageresize</name>
+			<class>com.ckfinder.connector.plugins.ImageResize</class>
+			<params>
+				<param name="smallThumb" value="90x90"></param>
+				<param name="mediumThumb" value="120x120"></param>
+				<param name="largeThumb" value="180x180"></param>
+			</params>
+		</plugin>
+		<plugin>
+			<name>fileeditor</name>
+			<class>com.ckfinder.connector.plugins.FileEditor</class>
+			<params></params>
+		</plugin>
+
+	</plugins>
+	<basePathBuilderImpl>net.madicorp.autodoc.filemanager.configuration.NewPathBuilder</basePathBuilderImpl>
+</config>

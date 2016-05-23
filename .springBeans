@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.6.3.201411271034-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/net/madicorp/autodoc/config/autodoc-context.xml</config>
+	</configs>
+	<autoconfigs>
+		<config>WebContent/WEB-INF/mvc-dispatcher-servlet.xml</config>
+		<config>WebContent/WEB-INF/spring-security.xml</config>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
